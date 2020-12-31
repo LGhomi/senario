@@ -2,6 +2,7 @@ import statistics
 
 
 class ExtendList(list):
+# class ExtendList:
     def __init__(self, lst):
         super().__init__(lst)
         self.lst = lst
