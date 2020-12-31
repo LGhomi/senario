@@ -33,3 +33,11 @@ class ExtendList(list):
 
     def __le__(self, other):
         return ExtendList.average(self.lst) <= ExtendList.average(other.lst)
+
+
+class TypeList(ExtendList):
+    def __ne__(self, other):
+        return self.lst[-1] !=other.lst[-1]
+
+    def __eq__(self, other):
+        return self.lst[-1] == other.lst[-1]
